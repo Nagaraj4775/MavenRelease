@@ -134,6 +134,9 @@
          
          
     </dependencies>
+    <scm>        
+      <developerConnection>scm:git:git@github.com:SnehaKailasa23/MavenRelease.git</developerConnection>
+    </scm>
      
     <build>
         <finalName>SpringMVCSecurityXML</finalName>
