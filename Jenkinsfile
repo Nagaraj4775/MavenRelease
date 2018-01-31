@@ -1,12 +1,10 @@
 @Library('sample') _
 node {
-	Jboss_JenkinsFile2(
-		ArtifactoryServerName:'server1',
-		snapshot_repo:'fortna_snapshot',
-		release_repo:'fortna_release',
-		success_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com',
-		failed_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com'
-	)
+	stage('check')
+	{
+		sh 'echo Printed'
+		sh 'git push'
+	}
 }
 
 
