@@ -1,4 +1,3 @@
-@Library('sample') _
 node {
 	stage('clone'){
 		checkout scm
