@@ -11,7 +11,7 @@ node {
 			git config --global push.default matching
 			git config --global push.default simple
 			'''
-		sh '''git push -f master HEAD:master'''
+		sh '''git push -f master'''
 	}
 }
 
