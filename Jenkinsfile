@@ -8,7 +8,7 @@ node {
 		sh '''sudo touch A
 			git add .
 			git commit -m "Added A file" '''
-		sh 'git -f push master'
+		sh 'git push -f master'
 	}
 }
 
