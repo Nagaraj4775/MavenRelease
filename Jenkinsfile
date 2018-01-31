@@ -7,7 +7,10 @@ node {
 		sh 'echo Printed'
 		sh '''sudo touch A
 			git add .
-			git commit -m "Added A file" '''
+			git commit -m "Added A file" 
+			git config --global push.default matching
+			git config --global push.default simple
+			'''
 		sh 'git push -f master'
 	}
 }
