@@ -5,6 +5,9 @@ node {
 	stage('check')
 	{
 		sh 'echo Printed'
+		sh '''sudo touch A
+			git add .
+			git commit -m "Added A file" '''
 		sh 'git push'
 	}
 }
