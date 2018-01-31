@@ -1,8 +1,0 @@
-@Library('sample')
-node {
-	JBoss_Jenkinsfile(
-		remote_user: 'ec2-user',
-		remote_ip: '18.231.38.27'
-  )
-}
-  
