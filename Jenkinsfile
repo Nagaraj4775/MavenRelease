@@ -1,5 +1,8 @@
 @Library('sample') _
 node {
+	stage('clone'){
+		checkout scm
+	}
 	stage('check')
 	{
 		sh 'echo Printed'
